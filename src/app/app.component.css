@@ -5,3 +5,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.button{
+
+  font-size: x-large;
+  height: 2em;
+  width: 4em;
+}
+.next {
+  border: 3px solid #5256da;
+  background-color: #5256da;
+  color: white;
+}
