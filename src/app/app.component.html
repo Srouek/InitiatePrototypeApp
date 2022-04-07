@@ -1,20 +1,24 @@
 <div class="content">
-  <p *ngIf="inputLabel1">
-    <mat-form-field appearance="legacy">
-      <mat-label>{{inputLabel1}}</mat-label>
-      <input matInput placeholder="{{inputLabel1}}">
-    </mat-form-field>
-  </p>
-  <p *ngIf="inputLabel2">
-    <mat-form-field appearance="legacy">
-      <mat-label>{{inputLabel2}}</mat-label>
-      <input matInput placeholder="{{inputLabel2}}">
-    </mat-form-field>
-  </p>
+  <ng-container *ngFor="let item of data">
 
-  <div class="row-button">
-    <button class="button next" >Next</button>
-  </div>
+    <p *ngIf="item.inputLabel1">
+      <mat-form-field appearance="legacy">
+        <mat-label>{{item.inputLabel1}}</mat-label>
+        <input matInput placeholder="{{item.inputLabel1}}">
+      </mat-form-field>
+    </p>
+    <p *ngIf="item.inputLabel2">
+      <mat-form-field appearance="legacy">
+        <mat-label>{{item.inputLabel2}}</mat-label>
+        <input matInput placeholder="{{item.inputLabel2}}">
+      </mat-form-field>
+    </p>
+
+    <div class="row-button">
+      <button class="button next" >Next</button>
+    </div>
+
+  </ng-container>
 
 
 </div>
