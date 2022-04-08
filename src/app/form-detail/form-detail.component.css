@@ -14,6 +14,12 @@
   padding-top: 15em;
   background-image:  url("../../assets/images/BaseBackgroud.svg");
 }
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2em;
+}
 
 .tools{
   width:6em;
