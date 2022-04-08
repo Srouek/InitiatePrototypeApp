@@ -29,3 +29,19 @@ form{
   width: 5em;
   margin-right: 1em;
 }
+
+.btn-row{
+  display:flex;
+  justify-content: space-between;
+}
+.btn-next{
+  background-color: yellow;
+  min-width: 5em;
+  border-radius: 5;
+  border: yellow;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+  padding:10px
+}
