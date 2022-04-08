@@ -1,3 +1,262 @@
-<p>
-  form-detail works!
-</p>
+<div class="content">
+  <mat-horizontal-stepper class="background">
+<!-- Step 1------------------------------------------>
+    <mat-step>
+      <form action="">
+        <div>
+          <span>
+            Je m'appelle
+            <mat-form-field class="input" appearance="legacy">
+              <input matInput placeholder="Nom">
+            </mat-form-field>
+            <mat-form-field class="input" appearance="legacy">
+              <input matInput placeholder="Prénom">
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <span>
+            Mon genre est
+            <mat-form-field appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of genre" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+<!-- Step 2 ------------------------------------------>
+    <mat-step>
+      <form action="">
+        <div>
+          <span>
+            Je viens d'avoir
+            <mat-form-field class="input" appearance="legacy">
+              <input  type="number" matInput placeholder="age">
+            </mat-form-field>
+            ans
+          </span>
+        </div>
+        <div>
+          <span>
+            Actuellement je cherche dans le secteur de
+            <mat-form-field class="input" appearance="legacy">
+              <input matInput placeholder="Ville">
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <span>
+            Je cherche un boulot dans cette branche d'activité
+            <mat-form-field appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of brancheActivite" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+<!-- Step 3 ------------------------------------------>
+    <mat-step>
+      <form action="">
+        <div>
+          <span>
+            Mon métier réver
+            <mat-form-field appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of dreamJob" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <span>
+            Les outils que je maitrise
+          </span>
+        </div>
+        <div>
+          <span>
+            <mat-form-field class="tools" appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of uxTools" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+
+          <span>
+            <mat-form-field class="tools" appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of uxTools" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+
+          <span>
+            <mat-form-field class="tools" appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of uxTools" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+<!-- Step 4 ------------------------------------------>
+    <mat-step>
+      <form action="">
+        <div>
+          <span>
+            Envoie nous un lien de ton portfolio
+          </span>
+          <span>
+            <mat-form-field  appearance="legacy">
+              <input type="url" matInput placeholder="url">
+            </mat-form-field>
+          </span>
+        </div>
+        <div>
+          <span>
+            Tu as reçu des formation Ux Design ?
+          </span>
+
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of formation" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+        </div>
+        <div>
+          <span>
+            C'est quoi ton domaine Ux préféré ?
+          </span>
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of expertise" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+        </div>
+        <div>
+          <span>
+            Tu as combien d'année d'expérience dans le milleu ?
+          </span>
+
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of experience" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+<!-- Step 5 ------------------------------------------>
+    <mat-step>
+      <form action="">
+        <div>
+          <span>
+            École en lien avec ton domaine
+          </span>
+          <mat-form-field  appearance="legacy">
+            <input matInput placeholder="École">
+          </mat-form-field>
+        </div>
+        <div>
+          <span>
+            C'est quoi ton niveau de Diplôme ?
+          </span>
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of diploma" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+          <span>
+            Tu as combien d'expérience pro ?
+          </span>
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of experiencePro" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+          <span>
+            Ton rapport avec le télétravail ?
+          </span>
+            <mat-form-field  appearance="legacy">
+              <mat-select>
+                <mat-option *ngFor="let value of teleTravail" [value]="value">
+                  {{value}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+          <span>
+            Tu cherches quoi ?
+          </span>
+          <section class="example-section" [formGroup]="contract">
+            <h4>Select your toppings:</h4>
+            <p><mat-checkbox formControlName="cdd">CDD</mat-checkbox></p>
+            <p><mat-checkbox formControlName="cdi">CDI</mat-checkbox></p>
+            <p><mat-checkbox formControlName="alternance">Alternance</mat-checkbox></p>
+            <p><mat-checkbox formControlName="partTime">Temps Partiel</mat-checkbox></p>
+          </section>
+        </div>
+
+        <div>
+          <button mat-button matStepperNext>Hop on valide</button>
+        </div>
+      </form>
+    </mat-step>
+
+  </mat-horizontal-stepper>
+<ng-container *ngIf="page1"></ng-container>
+
+
+
+
+</div>

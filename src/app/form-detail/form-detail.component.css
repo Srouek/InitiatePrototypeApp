@@ -1,0 +1,25 @@
+///Native element
+
+
+
+////// Raw Element
+
+
+
+.content{
+  height:100vh;
+}
+
+.background{
+  padding-top: 15em;
+  background-image:  url("../../assets/images/BaseBackgroud.svg");
+}
+
+.tools{
+  width:6em;
+  margin-right: 1em;
+}
+.input{
+  width: 5em;
+  margin-right: 1em;
+}
